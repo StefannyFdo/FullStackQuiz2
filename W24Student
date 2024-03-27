@@ -1,0 +1,9 @@
+// Create a Schema object
+const w24studentsSchema = new Schema({
+    name: { type: String, required: true },
+    studentID: { type: String, required: true }
+});
+
+const w24Student = mongoose.model("w24students", w24studentsSchema);
+
+export default w24Student;
